@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Пример сайта на Bootstrap с анимацией</title>
+  <!-- Подключение стилей Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Подключение AOS CSS и JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Ваши собственные стили, если необходимо -->
+  <style>
+    /* Добавьте свои стили здесь */
+    .rounded-image {
+      border-radius: 50%;
+      max-width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навигационная панель -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Логотип</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Особенности</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Главный раздел -->
+  <section class="container mt-5" data-aos="fade-up">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p class="lead">Здесь вы найдете много интересной информации.</p>
+        <a href="#features" class="btn btn-primary">Узнать больше</a>
+      </div>
+      <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="300">
+        <img src="img/icon3.png" alt="Картинка" class="rounded-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция с особенностями -->
+  <section id="features" class="container mt-5" data-aos="fade-up">
+    <h2>Особенности</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-right">
+        <h3>Функция 1</h3>
+        <p>Описание функции 1.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <h3>Функция 2</h3>
+        <p>Описание функции 2.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <h3>Функция 3</h3>
+        <p>Описание функции 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция с контактной информацией -->
+  <section id="contact" class="container mt-5" data-aos="fade-up">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами по следующим контактам:</p>
+    <address>
+      <strong>Email:</strong> info@example.com<br>
+      <strong>Телефон:</strong> +7 (123) 456-7890
+    </address>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="container-fluid bg-dark text-light p-3 text-center" data-aos="fade-up">
+    <p>&copy; 2023 Название вашей компании</p>
+  </footer>
+
+  <!-- Подключение скриптов Bootstrap и AOS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
