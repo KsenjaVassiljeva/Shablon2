@@ -1,102 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Пример сайта на Bootstrap с анимацией</title>
-  <!-- Подключение стилей Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Подключение AOS CSS и JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <!-- Ваши собственные стили, если необходимо -->
-  <style>
-    /* Добавьте свои стили здесь */
-    .rounded-image {
-      border-radius: 50%;
-      max-width: 200px;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Пример сайта на Bootstrap с анимацией</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Навигационная панель -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Логотип</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#features">Особенности</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Логотип</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Особенности</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Главный раздел -->
-  <section class="container mt-5" data-aos="fade-up">
+    <!-- Главный раздел -->
+    <section class="container mt-5" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Добро пожаловать на наш сайт!</h1>
+                <p class="lead">Здесь вы найдете много интересной информации.</p>
+                <a href="#features" class="btn btn-primary">Узнать больше</a>
+            </div>
+            <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="300">
+                <img src="img/icon3.png" alt="Картинка" class="rounded-image2">
+            </div>
+        </div>
+    </section>
+
+    <section id="middle-section" class="container mt-30" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12 text-center" data-aos="fade-up">
+                <h2>Оглавление</h2>
+                <div id="extended-description" class="text-center">
+                    <p>Добро пожаловать на наш сайт, посвященный удивительным возможностям и продуктам!</p>
+                    <p>Мы стремимся предоставить вам самую актуальную и полезную информацию о нашей компании и
+                        продукции.</p>
+                    <p>Наша команда работает над созданием уникального и захватывающего опыта для наших
+                        пользователей.</p>
+                    <p>Исследуйте раздел "Особенности", чтобы узнать больше о том, что делает нас особенными.</p>
+                    <p>Не стесняйтесь связаться с нами по указанным контактам, если у вас есть вопросы или
+                        предложения.</p>
+                </div>
+                <a href="#features" class="btn btn-primary">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="circle-section" class="container mt-5" data-aos="fade-up">
+      <div class="row">
+          <!-- Кружок 1 -->
+          <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="100">
+              <img src="img/icon1.png" alt="Кружок 1" class="rounded-image">
+              <h3>Заголовок 1</h3>
+              <p>Она указала на зеленый рисовый пирог.
+                «Эксперимент закончился. Пора сделать перерыв. Я просто не могу пропустить этот свежеприготовленный десерт».
+                
+                Она увидела, как девочка-марионетка нахмурилась и глубоко задумалась.
+                «Ну, в твоем нынешнем теле ты можешь только смотреть, но не есть. Я сделаю тебе коробку новых, когда придет время».
+                
+                Она увидела механического аристократа , колеблющегося перед своей чашкой.
+                «Не волнуйтесь. Это всего лишь машинное масло. Совершенно безопасно для употребления»..</p>
+          </div>
+          <!-- Кружок 2 -->
+          <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
+              <img src="img/icon1.png" alt="Кружок 2" class="rounded-image">
+              <h3>Заголовок 2</h3>
+              <p>Она указала на зеленый рисовый пирог.
+                «Эксперимент закончился. Пора сделать перерыв. Я просто не могу пропустить этот свежеприготовленный десерт».
+                
+                Она увидела, как девочка-марионетка нахмурилась и глубоко задумалась.
+                «Ну, в твоем нынешнем теле ты можешь только смотреть, но не есть. Я сделаю тебе коробку новых, когда придет время».
+                
+                Она увидела механического аристократа , колеблющегося перед своей чашкой.
+                «Не волнуйтесь. Это всего лишь машинное масло. Совершенно безопасно для употребления».</p>
+          </div>
+          <!-- Кружок 3 -->
+          <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="300">
+              <img src="img/icon1.png" alt="Кружок 3" class="rounded-image">
+              <h3>Заголовок 3</h3>
+              <p>Она указала на зеленый рисовый пирог.
+                «Эксперимент закончился. Пора сделать перерыв. Я просто не могу пропустить этот свежеприготовленный десерт».
+                
+                Она увидела, как девочка-марионетка нахмурилась и глубоко задумалась.
+                «Ну, в твоем нынешнем теле ты можешь только смотреть, но не есть. Я сделаю тебе коробку новых, когда придет время».
+                
+                Она увидела механического аристократа , колеблющегося перед своей чашкой.
+                «Не волнуйтесь. Это всего лишь машинное масло. Совершенно безопасно для употребления».</p>
+          </div>
+      </div>
+  </section>
+
+  <section id="button-section" class="container mt-5" data-aos="fade-up">
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-2 text-center">
+              <a href="#" class="btn btn-success btn-lg">Кнопка 1</a>
+          </div>
+          <div class="col-md-2 text-center">
+              <a href="#" class="btn btn-warning btn-lg">Кнопка 2</a>
+          </div>
+      </div>
+  </section>
+
+<!-- 4 Keys to Marketing Section -->
+<section id="marketing-keys" class="container mt-5" data-aos="fade-up">
     <div class="row">
-      <div class="col-md-6">
-        <h1>Добро пожаловать на наш сайт!</h1>
-        <p class="lead">Здесь вы найдете много интересной информации.</p>
-        <a href="#features" class="btn btn-primary">Узнать больше</a>
-      </div>
-      <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="300">
-        <img src="img/icon3.png" alt="Картинка" class="rounded-image">
-      </div>
+        <!-- Left Content -->
+        <div class="col-md-6">
+            <h2>4 Keys to Marketing That Works</h2>
+            <p class="lead">Unlock the secrets to successful marketing with these four key principles.</p>
+            
+            <!-- Grouped Buttons in a Rectangular Shape -->
+            <div class="rectangular-buttons">
+                <a href="#key1" class="btn btn-primary btn-lg" data-toggle="tab">Key 1</a>
+                <a href="#key2" class="btn btn-primary btn-lg" data-toggle="tab">Key 2</a>
+                <a href="#key3" class="btn btn-primary btn-lg" data-toggle="tab">Key 3</a>
+                <a href="#key4" class="btn btn-primary btn-lg" data-toggle="tab">Key 4</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <img src="img/icon2-1.png" alt="Image 1" class="img-fluid mb-3">
+            <img src="img/icon2-2.png" alt="Image 2" class="img-fluid mb-3">
+            <img src="img/icon2-3.png" alt="Image 3" class="img-fluid">
+        </div>
     </div>
-  </section>
+    
+</section>
+    <!-- Подвал -->
+    <footer class="container-fluid bg-dark text-light p-3 text-center" data-aos="fade-up">
+        <p>&copy; 2023 Название вашей компании</p>
+    </footer>
 
-  <!-- Секция с особенностями -->
-  <section id="features" class="container mt-5" data-aos="fade-up">
-    <h2>Особенности</h2>
-    <div class="row">
-      <div class="col-md-4" data-aos="fade-right">
-        <h3>Функция 1</h3>
-        <p>Описание функции 1.</p>
-      </div>
-      <div class="col-md-4" data-aos="fade-up">
-        <h3>Функция 2</h3>
-        <p>Описание функции 2.</p>
-      </div>
-      <div class="col-md-4" data-aos="fade-left">
-        <h3>Функция 3</h3>
-        <p>Описание функции 3.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Секция с контактной информацией -->
-  <section id="contact" class="container mt-5" data-aos="fade-up">
-    <h2>Контакты</h2>
-    <p>Свяжитесь с нами по следующим контактам:</p>
-    <address>
-      <strong>Email:</strong> info@example.com<br>
-      <strong>Телефон:</strong> +7 (123) 456-7890
-    </address>
-  </section>
-
-  <!-- Подвал -->
-  <footer class="container-fluid bg-dark text-light p-3 text-center" data-aos="fade-up">
-    <p>&copy; 2023 Название вашей компании</p>
-  </footer>
-
-  <!-- Подключение скриптов Bootstrap и AOS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- Подключение скриптов Bootstrap и AOS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
