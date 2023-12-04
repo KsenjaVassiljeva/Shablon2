@@ -51,7 +51,7 @@
 
     <section id="middle-section" class="container mt-30" data-aos="fade-up">
         <div class="row">
-            <div class="col-md-12 text-center" data-aos="fade-up">
+            <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="300">
                 <h2>Оглавление</h2>
                 <div id="extended-description" class="text-center">
                     <p>Добро пожаловать на наш сайт, посвященный удивительным возможностям и продуктам!</p>
@@ -122,44 +122,50 @@
           </div>
       </div>
   </section>
-
-<!-- 4 Keys to Marketing Section -->
-<section id="marketing-keys" class="container mt-5" data-aos="fade-up">
-    <div class="row">
-        <!-- Left Content -->
+  
+  <div class="container">
+    <div class="row">   
         <div class="col-md-6">
-            <h2>4 Keys to Marketing That Works</h2>
-            <p class="lead">Unlock the secrets to successful marketing with these four key principles.</p>
-            
-            <!-- Grouped Buttons in a Rectangular Shape -->
-            <div class="rectangular-buttons">
-                <a href="#key1" class="btn btn-primary btn-lg" data-toggle="tab">Key 1</a>
-                <a href="#key2" class="btn btn-primary btn-lg" data-toggle="tab">Key 2</a>
-                <a href="#key3" class="btn btn-primary btn-lg" data-toggle="tab">Key 3</a>
-                <a href="#key4" class="btn btn-primary btn-lg" data-toggle="tab">Key 4</a>
+            <h2 data-aos="fade-up">Оглавление</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Описание вашего контента.</p>
+            <div class="btn-group" data-aos="fade-up" data-aos-delay="200">
+                <button type="button" class="btn btn-primary">Ключ 1</button>
+                <button type="button" class="btn btn-primary">Ключ 2</button>
+                <button type="button" class="btn btn-primary">Ключ 3</button>
+                <button type="button" class="btn btn-primary">Ключ 4</button>
             </div>
         </div>
 
-        <div class="col-md-6">
-            <img src="img/icon2-1.png" alt="Image 1" class="img-fluid mb-3">
-            <img src="img/icon2-2.png" alt="Image 2" class="img-fluid mb-3">
-            <img src="img/icon2-3.png" alt="Image 3" class="img-fluid">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/1.png" alt="Изображение 1" class="img-fluid mb-3 draggable">
+            <img src="img/2.png" alt="Изображение 2" class="img-fluid mb-3 draggable">
         </div>
     </div>
-    
-</section>
-    <!-- Подвал -->
-    <footer class="container-fluid bg-dark text-light p-3 text-center" data-aos="fade-up">
-        <p>&copy; 2023 Название вашей компании</p>
-    </footer>
+</div>
 
-    <!-- Подключение скриптов Bootstrap и AOS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<div class="container mt-3">
+    <div id="video-container">
+        <div id="video" data-aos="fade-up" data-aos-delay="100">
+                <iframe width="100%" height="360" src="https://www.youtube.com/embed/80Qdgg3Mvjo?si=rhINc_Fu004wqPME"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-6 mt-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                <h2>Title of the Video</h2>
+                <p>Description of the video content goes here.</p>
+                <a href="#" class="btn btn-primary">Watch Now</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap and AOS Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>

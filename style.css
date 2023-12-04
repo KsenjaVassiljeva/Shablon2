@@ -92,18 +92,104 @@
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Maintain aspect ratio */
-        z-index: 1; /* Ensure images appear above other content */
+        object-fit: cover;
+        z-index: 1;
     }
     
     #marketing-keys .col-md-6 img:nth-child(2) {
-        z-index: 2; /* Increase z-index for the second image */
+        z-index: 2;
     }
     
     #marketing-keys .col-md-6 img:nth-child(3) {
-        z-index: 6; /* Increase z-index for the third image */
+        z-index: 6;
     }
 
+    .justify-content-center {
+        -ms-flex-pack: center!important;
+        justify-content: center;
+        margin-bottom: 182px;
+    }
+    
+    .draggable {
+        cursor: grab;
+    }
+    
+    .draggable:active {
+        cursor: grabbing;
+    }
+    
+    .mb-3, .my-3 {
+        margin-top: 61px;
+        margin-bottom: -7rem!important;
+    }
+    
+    .img-fluid draggable{
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+    .h2, h2 {
+        font-size: 5rem;
+        margin-top: 226px;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0.5rem;
+        font-family: ui-sans-serif;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+    }
+
+    #video-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #video {
+        flex: 1;
+    }
+    #description {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .btn-success {
+        color: #fff;
+        background-color: #b192b0;
+        border-color: #b192b0;
+    }
+    .btn-warning {
+        color: #ffffff;
+        background-color: #5e8375;
+        border-color: #5e8375;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #5e8375;
+        border-color: #5e8375;
+        justify-content: center;
+    }
+
+    .container mt-5 mb-5{
+        margin-top: 10px;
+    }
+
+    #middle-section h2, #contact h2 {
+        text-align: center;
+        margin-top: 75px;
+    }
+
+    .justify-content-center {
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+        margin-top: -271px;
+    }
+    #video-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+        margin-top: 235px;
+    }
 
 @media (max-width: 768px) {
     #button-section .col-md-6 {
@@ -113,5 +199,10 @@
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 39.333333%;
-    }  
+    } 
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 59%;
+    }
 }
